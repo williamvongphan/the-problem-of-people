@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    --font-title: "greycliff-cf", sans-serif;
+    --font-body: "arboria", sans-serif;
+}
