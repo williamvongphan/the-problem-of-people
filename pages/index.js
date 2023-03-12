@@ -1,7 +1,5 @@
 import Head from "next/head";
 import {Scrollama, Step} from "react-scrollama";
-import {useSpring, animated} from "@react-spring/web";
-import {Text} from "@nextui-org/react";
 import TextCard from "../components/TextCard";
 import styles from "../styles/Home.module.css";
 import TinyCrossfade from "../components/Crossfade/index";
@@ -145,6 +143,7 @@ export default function Home() {
 							&quot;there&quot; to your &quot;here&quot; -- a sense of orientation and connection to the world. Lisa Guenther argues that placing
 							prisoners in SHUs serves to &quot;deprive him of this network of perceptual and existential orientation&quot;.
 						</p>
+						<br/>
 						<p className={styles.textCardBody}>
 							But is artificial intelligence able to provide this sense of orientation, to any extent? And if so, what does this mean
 							for our understanding of ourselves and our relationships with the world?

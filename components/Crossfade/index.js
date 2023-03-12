@@ -38,7 +38,7 @@ class Crossfade extends React.Component {
 	delayTimer = null;
 	heightTimer = null;
 	raf = null;
-	inputRef = useRef(null);
+	inputRef = null;
 
 	// Because TinyTransition uses request animation frame, we need to wait two frames before accessing children in the DOM
 	waitTwoFrames = callback => {
@@ -50,7 +50,8 @@ class Crossfade extends React.Component {
 	};
 
 	setWrapperHeight = () => {
-		const wrapper = this.inputRef.current;
+		// eslint-disable-next-line react/no-find-dom-node
+		const wrapper = ReactDOM.findDOMNode(this);
 		const child = wrapper && wrapper.firstElementChild;
 		const newHeight = child ? child.offsetHeight : 0;
 
