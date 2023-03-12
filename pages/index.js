@@ -3,7 +3,7 @@ import {Scrollama, Step} from "react-scrollama";
 import {useSpring, animated} from "@react-spring/web";
 import {Text} from "@nextui-org/react";
 import TextCard from "../components/TextCard";
-import styles from "../styles/Home.module.css&apos";
+import styles from "../styles/Home.module.css";
 import TinyCrossfade from "../components/Crossfade/index";
 import RichTextBlock from "../components/RichTextBlock";
 
