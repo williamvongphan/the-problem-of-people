@@ -11,7 +11,7 @@ import {Inter} from "next/dist/compiled/@next/font/dist/google";
 export default function BackgroundOne() {
 	// Create a background that contains a series of modal that can be interacted with.
 	return (
-		<div className={"w-full h-full flex flex-col justify-center items-center bg-zinc-700 duration-300"} key={"a"}>
+		<div className={"w-full h-screen flex flex-col justify-center items-center bg-zinc-700 duration-300"} key={"a"}>
 			<InteractiveModalSeries
 				modals={[
 					<InteractiveModal
@@ -20,6 +20,7 @@ export default function BackgroundOne() {
 						box1Emoji={"🔬"}
 						box2={"While we have safeguards in place, the system may occasionally generate incorrect or misleading information and produce offensive or biased content. It is not intended to give advice."}
 						box2Emoji={"🚨"}
+						key={"1"}
 					/>,
 					<InteractiveModal
 						title={"How we collect data"}
@@ -27,6 +28,7 @@ export default function BackgroundOne() {
 						box1Emoji={"🦾"}
 						box2={"Please don't share any sensitive information in your conversations."}
 						box2Emoji={"🔐"}
+						key={"2"}
 					/>,
 					<InteractiveModal
 						title={"We'd love your feedback!"}
@@ -34,6 +36,7 @@ export default function BackgroundOne() {
 						box1Emoji={"👍"}
 						box2={"Share your feedback in our Discord server."}
 						box2Emoji={"💬"}
+						key={"3"}
 					/>
 				]}
 			/>

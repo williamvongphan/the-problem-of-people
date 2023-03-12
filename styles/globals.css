@@ -6,3 +6,33 @@ html {
     --font-title: "greycliff-cf", sans-serif;
     --font-body: "arboria", sans-serif;
 }
+
+.crossfade {
+    transition: all 0.5s cubic-bezier(0.36, 0.06, 0, 1);
+}
+
+.before-enter {
+    opacity: 0;
+    height: 100%;
+    transform: scale(0.5);
+}
+
+.entering {
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+    height: 100%;
+    transform: scale(1);
+}
+
+.before-leave {
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+    height: 100%;
+    transform: scale(1);
+}
+
+.leaving {
+    opacity: 0;
+    height: 100%;
+    transform: scale(0.5);
+}
