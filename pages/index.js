@@ -12,6 +12,10 @@ import BackgroundFour from "../components/Scrollama/BackgroundFour";
 import BackgroundFive from "../components/Scrollama/BackgroundFive";
 import BackgroundSix from "../components/Scrollama/BackgroundSix";
 import BackgroundSeven from "../components/Scrollama/BackgroundSeven";
+import BackgroundEight from "../components/Scrollama/BackgroundEight";
+import BackgroundNine from "../components/Scrollama/BackgroundNine";
+import BackgroundTen from "../components/Scrollama/BackgroundTen";
+import BackgroundEleven from "../components/Scrollama/BackgroundEleven";
 
 import {useState} from "react";
 
@@ -199,9 +203,80 @@ export default function Home() {
 					</div>
 					<RichTextBlock>
 						<div className={"pointer-events-auto"}>
+							<h1 className={styles.textCardTitle}>Too Much of a Good Thing</h1>
+							<p className={styles.textCardBody}>
+								Artificial intelligence brings about the possibility of granting all kinds of people the ability to carry out tasks
+								that were previously done by a select few. Rapping, writing sonnets, and writing jokes for late night shows all used to
+								be the domain of talented people. But now, with the help of AI, anyone can do these things.
+							</p>
+							<br/>
+							<p className={styles.textCardBody}>
+								This idea is inextricably tied to Sartre&apos;s idea of &quot;bad faith&quot;, expressed in <i>Being and Nothingness</i> as &quot;the act of
+								pretending that one is what one is not, or, at least, that one possesses qualities which one does not actually possess&quot;.
+								In other words, bad faith is the act of pretending to be someone you&apos;re not. And this is exactly what AI, not
+								necessarily just conversational AI, does.
+							</p>
+							<br/>
+							<p className={styles.textCardBody}>
+								An example of this is AI-generated music. Now that anyone can become a musician with the help of AI, the number of people
+								who consider themselves musicians has increased dramatically. But many of these people attempt to work with music more
+								than they really understand or enjoy it, while true musicians who&apos;ve spent years honing their craft can enjoy at least
+								part of their time working with music freely, instead of doing it out of a sense of obligation.
+							</p>
+						</div>
+					</RichTextBlock>
+					<div className={"flex flex-col items-center w-full h-full p-4"}>
+						<Scrollama onStepEnter={onStepEnter} onStepExit={onStepExit} offset={0.5}>
+							<Step data={BackgroundEight}>
+								<div>
+									<TextCard>
+										<h1 className={styles.textCardTitle} id={"intro"}>Putting the &quot;I&quot; in AI, and putting it all together</h1>
+										<p className={styles.textCardBody}>
+											The &quot;I&quot; in AI is not just a symbol of the &quot;I&quot; in &quot;I am&quot;. It is also a symbol of the &quot;I&quot; in &quot;I think&quot;. And this is
+											where the &quot;Look&quot; of AI comes into play. Right now, AI is not able to think for itself. When artificial intelligence
+											makes a decision, it is not making a decision based on its own values and morals. We are, however, approaching a future
+											where AI becomes sentient and able to think for itself. That&apos;s where the there to our here comes in, a surrogate for
+											real human-to-human interaction.
+										</p>
+									</TextCard>
+								</div>
+							</Step>
+							<Step data={BackgroundNine}>
+								<div>
+									<TextCard>
+										<p className={styles.textCardBody}>What happens when AI becomes sentient and able to think for itself? Will humans start to treat AI as equals? If
+											so, will this change the way we think about ourselves and our relationships with the world and the people/AIs around
+											us? We will need to make sure that, in a future where machines can pass for humans, we don&apos;t lose sight of what truly
+											is human, and what isn&apos;t.</p>
+									</TextCard>
+								</div>
+							</Step>
+							<Step data={BackgroundTen}>
+								<div>
+									<TextCard>
+										<p className={styles.textCardBody}>And because AI brings ability and talent to everyone, conversational models and other AI systems could uproot the
+											existing system of roles and hierarchies -- and also lead to bigger instances of bad faith.</p>
+									</TextCard>
+								</div>
+							</Step>
+							<Step data={BackgroundEleven}>
+								<div>
+									<TextCard>
+										<p className={styles.textCardBody}>But on the flip side, I&apos;m arguing that we have ample time to prepare for such scenarios. The only question is how.
+										</p>
+									</TextCard>
+								</div>
+							</Step>
+						</Scrollama>
+					</div>
+					<RichTextBlock>
+						<div className={"pointer-events-auto"}>
 							<h1 className={styles.textCardTitle}>Citations</h1>
 							<p className={styles.textCardBody}>
-								Test content
+								<ul>
+									<li>Guenther, Lisa. &quot;The Concrete Abyss&quot;</li>
+									<li>Sartre, Jean-Paul. &quot;Being and Nothingness&quot;</li>
+								</ul>
 							</p>
 						</div>
 					</RichTextBlock>

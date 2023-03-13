@@ -5,7 +5,7 @@ import React from 'react';
 export default function RichTextBlock({children}) {
 	return (
 		<div className={"flex flex-col justify-start items-start w-screen h-full bg-white"}>
-			<div className={"p-16 max-w-5xl w-full mx-auto"}>
+			<div className={"px-16 py-32 max-w-5xl w-full mx-auto"}>
 				{children}
 			</div>
 		</div>

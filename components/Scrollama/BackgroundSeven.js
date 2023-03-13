@@ -2,11 +2,6 @@
 // website that contains ChatGPT.
 
 import React from 'react';
-import {Text} from '@nextui-org/react';
-import {useSpring, animated} from "@react-spring/web";
-import InteractiveModal from "../InteractiveModal"
-import InteractiveModalSeries from "../InteractiveModalSeries";
-import {Inter} from "next/dist/compiled/@next/font/dist/google";
 import Image from "next/image";
 
 export default function BackgroundOne() {
