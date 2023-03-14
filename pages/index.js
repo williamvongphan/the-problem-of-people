@@ -35,8 +35,8 @@ export default function Home() {
 	return (
 		<div className={styles.container + " overflow-x-hidden"}>
 			<Head>
-				<title>Blah</title>
-				<meta name="description" content="Next.js fiasco"/>
+				<title>The Look of AI: How Conversational Agents Affect Our Sense of Self and Others</title>
+				<meta name="description" content="Existentialism project, I don't really have a better meta tag for this"/>
 				<link rel="icon" href="/favicon.ico"/>
 				<link rel="stylesheet" href="https://use.typekit.net/crs6xwd.css"/>
 			</Head>
